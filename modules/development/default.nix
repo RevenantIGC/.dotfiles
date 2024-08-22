@@ -146,7 +146,7 @@ in
     boot.kernelModules = [ "kvm-amd" ];
     systemd.enableUnifiedCgroupHierarchy = true;
     virtualisation.libvirtd.enable = true;
-    users.extraUsers.maxhero.extraGroups = [ "libvirtd" "kvm" ];
+    users.extraUsers.revenantigc.extraGroups = [ "libvirtd" "kvm" ];
     programs.dconf.enable = true;
     environment.systemPackages = with pkgs; [ virt-manager ] ++ languages;
     virtualisation.oci-containers = {
@@ -157,8 +157,8 @@ in
           image = "codercom/code-server";
           ports = ["7654:8080"];
           volumes = [
-            "/home/maxhero/projects/:/home/coder/project/"
-            "/home/maxhero/.config:/home/coder/.config"
+            "/home/revenantigc/projects/:/home/coder/project/"
+            "/home/revenantigc/.config:/home/coder/.config"
           ];
           environment = {
             PASSWORD = "code-space-666";

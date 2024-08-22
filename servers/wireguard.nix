@@ -18,7 +18,7 @@ in
         wg0 = {
           ips = [ "${wgPrefixV4}.1/24" "${wgPrefixV6}:1/64" ];
           listenPort = 51820;
-          privateKeyFile = "/home/maxhero/wireguard-keys/private";
+          privateKeyFile = "/home/revenantigc/wireguard-keys/private";
           peers = [
             {
               publicKey = "3guu9BcaID9IvvpznNNe1ZxoFsm2rH8m+O7XqbC7WVU=";

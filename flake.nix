@@ -30,10 +30,10 @@
         mono = nixpkgs.legacyPackages.x86_64-linux.mono;
        }).emuhawk-latest;
       formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
-      mkHome = (import (self + /home/maxhero) attrs).mkHome;
+      mkHome = (import (self + /home/revenantigc) attrs).mkHome;
       mkSystem = (import (self + /modules) attrs).mkSystem;
       nixosConfigurations = {
-        maxhero-workstation = mkSystem {
+        revenantigc-workstation = mkSystem {
           enableBareMetal = true;
           enableEmacs = true;
           enableDevelopment = true;
@@ -52,12 +52,12 @@
             enableGaming = true;
           };
           extraModules = [
-            (self + /systems/maxhero-workstation/configuration.nix)
-            (self + /systems/maxhero-workstation/hardware-configuration.nix)
+            (self + /systems/revenantigc-workstation/configuration.nix)
+            (self + /systems/revenantigc-workstation/hardware-configuration.nix)
           ];
           specialArgs = attrs;
         };
-        maxhero-pi4 = import (self + /systems/maxhero-pi4) attrs;
+        revenantigc-pi4 = import (self + /systems/revenantigc-pi4) attrs;
         uchigatana = mkSystem {
           enableBareMetal = true;
           enableDevelopment = true;

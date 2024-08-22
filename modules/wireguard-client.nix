@@ -3,7 +3,7 @@
   networking = {
     wireguard.interfaces.wg0 =
       {
-        privateKeyFile = "/home/maxhero/wireguard-keys/private";
+        privateKeyFile = "/home/revenantigc/wireguard-keys/private";
         # In the configuration add `ips` and `privateKeyFile`.
         peers = [
           {
@@ -13,7 +13,7 @@
               "0.0.0.0/0"
               "::/0"
             ];
-            endpoint = "vps.maxhero.com.br:51820";
+            endpoint = "vps.revenantigc.com.br:51820";
             persistentKeepalive = 25;
           }
         ];

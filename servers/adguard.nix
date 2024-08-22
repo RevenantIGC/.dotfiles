@@ -105,7 +105,7 @@
       };
       tls = {
         enabled = true;
-        server_name = "dns.maxhero.com.br";
+        server_name = "dns.revenantigc.com.br";
         force_https = false;
         port_https = 3334;
         port_dns_over_tls = 853;
@@ -116,8 +116,8 @@
         #strict_sni_check = false;
         #certificate_chain = "";
         #private_key = "";
-        certificate_path = "/var/lib/acme/vps.maxhero.com.br/cert.pem";
-        private_key_path = "/var/lib/acme/vps.maxhero.com.br/key.pem";
+        certificate_path = "/var/lib/acme/vps.revenantigc.com.br/cert.pem";
+        private_key_path = "/var/lib/acme/vps.revenantigc.com.br/key.pem";
       };
       filters = [
         {

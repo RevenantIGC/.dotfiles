@@ -18,7 +18,7 @@ in
     , extraModules ? [ ]
     , arch ? "x86_64-linux"
     , specialArgs ? { }
-    , username ? "maxhero"
+    , username ? "revenantigc"
     , home
     , ...
     }:
@@ -37,7 +37,7 @@ in
           };
         })
       ];
-      emacs = (import (self + /home/maxhero/development/emacs) attrs);
+      emacs = (import (self + /home/revenantigc/development/emacs) attrs);
       modules =
         [ { nixpkgs.overlays = [nur.overlay]; } ]
         ++ (lib.optionals enableOpticalMediaGeneration [

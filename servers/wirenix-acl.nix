@@ -25,7 +25,7 @@ in
   ];
   peers = [
     {
-      privateKeyFile = "/home/maxhero/wireguard-keys/private";
+      privateKeyFile = "/home/revenantigc/wireguard-keys/private";
       subnets = {
         personal = {
           listenPort = 51820;
