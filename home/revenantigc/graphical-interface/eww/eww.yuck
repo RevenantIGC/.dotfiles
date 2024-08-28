@@ -125,11 +125,11 @@
     (literal :content {notifications_listen.content}))) 
 
 (defwidget date []
-  (icon-module :class "date" :icon "" 
+  (icon-module :class "date" :icon "/" 
     (button :onclick "~/.config/rofi/calendar/calendar" (label :text date_poll))))
 
 (defwidget time []
-  (icon-module :class "time" :icon "" 
+  (icon-module :class "time" :icon "/" 
     (label :text time_poll))) 
 
 (defwidget nvidia []
