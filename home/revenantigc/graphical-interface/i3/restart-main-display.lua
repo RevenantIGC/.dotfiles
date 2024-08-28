@@ -23,7 +23,7 @@ end
 
 function restart_display(display)
   local workspaces_to_move_back = get_workspaces_to_move(display)
-  print(io.popen('xrandr --output ' .. display .. ' --off && xrandr --output ' .. display .. ' --left-of DP-3 --auto'):read('*a'))
+  print(io.popen('xrandr --output ' .. display .. ' --off && xrandr --output ' .. display .. ' --left-of DP-1 --auto'):read('*a'))
   for k, workspace in ipairs(workspaces_to_move_back) do
     local cmd = 'i3-msg \'[workspace="' .. workspace .. '"]\' move workspace to output ' .. display
     local result = io.popen(cmd):read('*a')

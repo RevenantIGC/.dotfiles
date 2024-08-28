@@ -6,16 +6,16 @@ local json = require('cjson.safe')
 local inspect = require('inspect')
 local handle = io.popen('i3-msg -t subscribe \'["workspace"]\' > /dev/null && i3-msg -t get_workspaces')
 local mapping_table = {
-  ['1'] = '一',
-  ['2'] = '二',
-  ['3'] = '三',
-  ['4'] = '四',
-  ['5'] = '五',
-  ['6'] = '六',
-  ['7'] = '七',
-  ['8'] = '八',
-  ['9'] = '九',
-  ['10'] = '十'
+  ['1'] = '1',
+  ['2'] = '2',
+  ['3'] = '3',
+  ['4'] = '4',
+  ['5'] = '5',
+  ['6'] = '6',
+  ['7'] = '7',
+  ['8'] = '8',
+  ['9'] = '9',
+  ['10'] = '10'
 }
 
 local mapped = {}
