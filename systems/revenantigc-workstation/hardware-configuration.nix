@@ -23,7 +23,7 @@
   boot.kernelParams = [
     "amd_iommu=on"
     # "vfio-pci.ids=1002:67df,1002:aaf0"
-    "libata.force=4.00:disable"
+    #"libata.force=4.00:disable"
   ];
 
   boot.initrd.kernelModules = [
@@ -44,12 +44,12 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/9f7c97e5-d9bf-4681-844a-669c1093da90";
+    device = "/dev/disk/by-uuid/063b13bf-4276-4cc3-b347-2c4f8a77b388";
     fsType = "ext4";
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/6AE2-F448";
+    device = "/dev/disk/by-uuid/C842-975A";
     fsType = "vfat";
   };
 

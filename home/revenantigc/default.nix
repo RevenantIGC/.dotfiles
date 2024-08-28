@@ -57,7 +57,7 @@ in
               })
             ]);
             home.username = username;
-            home.homeDirectory = homeDirectory;
+            home.homeDirectory = lib.mkForce homeDirectory;
           })
         ]
         ++ extraModules;

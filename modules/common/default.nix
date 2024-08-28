@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  users.users.maxhero = {
+  users.users.revenantigc = {
     isNormalUser = true;
     uid = 1000;
     extraGroups = [
@@ -66,7 +66,7 @@
       options = "--delete-older-than 7d";
     };
     settings = {
-      trusted-users = [ "root" "maxhero" ];
+      trusted-users = [ "root" "revenantigc" ];
       auto-optimise-store = true;
       substituters = [
         "https://nix-gaming.cachix.org"
@@ -82,7 +82,7 @@
   nixpkgs.config.allowUnfree = true;
 
   i18n = {
-    defaultLocale = "ja_JP.UTF-8";
+    defaultLocale = "en_US.UTF-8";
     supportedLocales = [
       "ja_JP.UTF-8/UTF-8"
       "en_GB.UTF-8/UTF-8"
@@ -90,9 +90,9 @@
       "pt_BR.UTF-8/UTF-8"
     ];
     extraLocaleSettings = {
-      LC_ALL = "ja_JP.UTF-8";
-      LANGUAGE = "ja_JP.UTF-8";
-      LC_TIME = "ja_JP.UTF-8";
+      LC_ALL = "en_US.UTF-8";
+      LANGUAGE = "en_US.UTF-8";
+      LC_TIME = "pt_BR.UTF-8";
       LC_MONETARY = "pt_BR.UTF-8";
       LC_NUMERIC = "pt_BR.UTF-8";
     };

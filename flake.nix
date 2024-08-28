@@ -1,6 +1,6 @@
 {
   # CEREAL REAL
-  description = "Max Hero's Nix Flakes";
+  description = "RevenantIgc's Nix Flakes";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -35,14 +35,14 @@
       nixosConfigurations = {
         revenantigc-workstation = mkSystem {
           enableBareMetal = true;
-          enableEmacs = true;
+          enableEmacs = false;
           enableDevelopment = true;
           enableGraphicalInterface = true;
           enableGaming = true;
           enableNetworking = true;
           enableSound = true;
           enableVFIO = true;
-          enableWireguard = true;
+          enableWireguard = false;
           home = mkHome {
             personal = true;
             enableDoomEmacs = true;
