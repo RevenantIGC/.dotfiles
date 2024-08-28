@@ -57,7 +57,6 @@
     vSync = true;
   };
   services.xserver.deviceSection = ''Option "TearFree" "true"'';
-  gaming.enable = true;
   graphical-interface.enable = true;
   boot.extraModprobeConfig = ''
     options snd_hda_intel power_save=0

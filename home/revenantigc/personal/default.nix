@@ -2,8 +2,8 @@
 {
   programs.git = {
     enable = true;
-    userName = "Marcelo Amancio de Lima Santos";
-    userEmail = "contact@revenantigc.dev";
+    userName = "Igor Alves da Costa";
+    userEmail = "igoralvescosta666@gmail.com";
     extraConfig = {
       rerere.enabled = true;
       pull.rebase = true;

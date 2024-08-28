@@ -38,18 +38,18 @@
           enableEmacs = false;
           enableDevelopment = true;
           enableGraphicalInterface = true;
-          enableGaming = true;
+          enableGaming = false;
           enableNetworking = true;
           enableSound = true;
           enableVFIO = true;
           enableWireguard = false;
           home = mkHome {
             personal = true;
-            enableDoomEmacs = true;
+            enableDoomEmacs = false;
             enableDevelopment = true;
             enableVSCode = true;
             enableUI = true;
-            enableGaming = true;
+            enableGaming = false;
           };
           extraModules = [
             (self + /systems/revenantigc-workstation/configuration.nix)
