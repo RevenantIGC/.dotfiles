@@ -62,7 +62,7 @@ in
       ".anthy".source = self + /home/revenantigc/graphical-interface/.anthy;
       ".uim.d".source = ./.uim.d;
       ".wallpaper.jpg".source = self + /home/revenantigc/graphical-interface/.wallpaper_new.jpg;
-      ".wallpaper.png".source = self + /home/revenantigc/graphical-interface/.sexo.png;
+      ".wallpaper.png".source = self + /home/revenantigc/graphical-interface/.wallpapermiku2.png;
     };
   };
 
