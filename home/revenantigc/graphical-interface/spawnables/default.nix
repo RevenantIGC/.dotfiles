@@ -15,7 +15,7 @@ in
     browser = "firefox.desktop";
     #ime = "${pkgs.fcitx5}/bin/fcitx5";
     ime = "${pkgs.ibus}/bin/ibus-daemon -rxRd";
-    wallpaper = "${pkgs.feh}/bin/feh --bg-fill ~/.wallpaper.png";
+    wallpaper = "${pkgs.feh}/bin/feh --bg-fill ~/.wallpaper.jpg";
     lock = "${pkgs.i3lock-fancy-rapid}/bin/i3lock";
     network-applet = "${pkgs.networkmanagerapplet}/bin/nm-applet --indicator";
   };
