@@ -77,7 +77,7 @@
       }
     ];
     windowManager.i3.extraSessionCommands = ''
-      xrandr --output eDP --mode 1920x1080 --output HDMI-1-0 --primary --mode 3840x2160 --right-of eDP
+      xrandr --output eDP --mode 1920x1080 --output HDMI-1-0 --primary --mode 1920x1080 --right-of eDP
     '';
   };
 

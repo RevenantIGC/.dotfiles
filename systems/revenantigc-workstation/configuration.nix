@@ -52,9 +52,10 @@
     qpwgraph -a &
     xrandr --output DP-1 --primary --mode 1920x1080 --output HDMI-1 --off
   '';
+  services.libinput.mouse.accelSpeed = "-0.5";
   services.picom = {
     enable = true;
-    vSync = true;
+    vSync =true;
   };
   services.xserver.deviceSection = ''Option "TearFree" "true"'';
   graphical-interface.enable = true;
