@@ -4,6 +4,7 @@ let
   conditional-lang = x: y: if builtins.elem x cfg.languages then y else [ ];
   languages = with pkgs; (
     [
+      vscode
       mu
       python39Packages.nose
       python3Full

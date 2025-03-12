@@ -49,9 +49,7 @@ in
         ])
         ++ [
           ({ pkgs, ... }: {
-            environment.systemPackages = extraPackages ++ (lib.optionals enableVSCode [
-              pkgs.vscode
-            ]);
+            home.packages = extraPackages;
             home.username = username;
             home.homeDirectory = lib.mkForce homeDirectory;
           })
