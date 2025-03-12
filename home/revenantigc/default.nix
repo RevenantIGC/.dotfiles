@@ -50,10 +50,7 @@ in
         ++ [
           ({ pkgs, ... }: {
             environment.systemPackages = extraPackages ++ (lib.optionals enableVSCode [
-              (vscode-pkg {
-                inherit pkgs;
-                extraExtensions = extraVSCodeExtensions;
-              })
+              pkgs.vscode
             ]);
             home.username = username;
             home.homeDirectory = lib.mkForce homeDirectory;
