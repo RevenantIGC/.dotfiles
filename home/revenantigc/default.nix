@@ -1,7 +1,6 @@
 { self, nixpkgs, nix-doom-emacs, nur, ... }@attrs:
 let
   lib = nixpkgs.lib;
-  vscode-pkg = import (self + /home/revenantigc/development/vscode);
 in
 {
   mkHome =
@@ -50,7 +49,7 @@ in
         ])
         ++ [
           ({ pkgs, ... }: {
-            home.packages = extraPackages ++ (lib.optionals enableVSCode [
+            environment.systemPackages = extraPackages ++ (lib.optionals enableVSCode [
               (vscode-pkg {
                 inherit pkgs;
                 extraExtensions = extraVSCodeExtensions;
